@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Better-Image-Viewer",
+  "version": "1.0",
+
+  "description": "Improves image viewer by adding ability to easily rotate and resize images.",
+
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["source/better-image-viewer.js"]
+    }
+  ]
+  
+}
